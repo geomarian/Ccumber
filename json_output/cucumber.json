@@ -1,0 +1,159 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Login with valid username and password with parameter",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2161946000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter URL \"https://s1.demo.opensourcecms.com/wordpress/wp-login.php\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://s1.demo.opensourcecms.com/wordpress/wp-login.php",
+                  "offset": 11
+                }
+              ],
+              "location": "loginCred.enter_URL(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 770424500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter username \"opensourcecms\" and password \"opensourcecms\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "opensourcecms",
+                  "offset": 16
+                },
+                {
+                  "val": "opensourcecms",
+                  "offset": 45
+                }
+              ],
+              "location": "loginCred.enter_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2919169100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click on login button",
+            "match": {
+              "location": "loginCred.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12950200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User must successfully login to the application",
+            "match": {
+              "location": "loginCred.user_must_successfully_login_to_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7705094300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "main.open_browser()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Existing User is Edited",
+        "description": "",
+        "id": "in-order-to-test-home-page-of-application;existing-user-is-edited",
+        "after": [
+          {
+            "result": {
+              "duration": 1095614400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "main.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4477147000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "On user list and select user to edit",
+            "match": {
+              "location": "editUser.on_user_list_and_select_user_to_edit()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13320119700,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Click on edit user",
+            "match": {
+              "location": "editUser.click_on_edit_user()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 981481200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User edited and updated successfully",
+            "match": {
+              "location": "editUser.user_edited_and_updated_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 24,
+            "name": "@EditUser"
+          }
+        ]
+      }
+    ],
+    "name": "In order to test Home Page of application",
+    "description": "As a Registered user\r\nI want to specify the features of home page",
+    "id": "in-order-to-test-home-page-of-application",
+    "keyword": "Feature",
+    "uri": "E:/GEO/Selenium Sample/cucum/Features/statement.feature"
+  }
+]

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="33.443946">
+<testcase classname="In order to test Home Page of application" name="Existing User is Edited" time="33.443946">
+<system-out><![CDATA[Given Enter URL "https://s1.demo.opensourcecms.com/wordpress/wp-login.php"..passed
+When Enter username "opensourcecms" and password "opensourcecms"............passed
+And Click on login button...................................................passed
+Then User must successfully login to the application........................passed
+When On user list and select user to edit...................................passed
+And Click on edit user......................................................passed
+Then User edited and updated successfully...................................passed
+]]></system-out>
+</testcase>
+</testsuite>
